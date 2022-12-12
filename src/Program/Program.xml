@@ -4,15 +4,16 @@
         <name>Program</name>
     </assembly>
     <members>
-        <member name="T:ConsoleApplication.Program">
+        <member name="T:Program">
             <summary>
-            Programa de consola de demostración.
+            Clase que representa el programa principal.
             </summary>
         </member>
-        <member name="M:ConsoleApplication.Program.Main">
+        <member name="M:Program.Main(System.String[])">
             <summary>
-            Punto de entrada al programa principal.
+            Main del programa.
             </summary>
+            <param name="args"></param>
         </member>
     </members>
 </doc>

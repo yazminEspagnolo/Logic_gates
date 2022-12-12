@@ -4,29 +4,29 @@
         <name>LibraryTests</name>
     </assembly>
     <members>
-        <member name="T:Tests.TrainTests">
+        <member name="T:LibraryTests.Tests">
             <summary>
-            Prueba de la clase <see cref="T:ClassLibrary.Train"/>.
+            Clase de tests
             </summary>
         </member>
-        <member name="F:Tests.TrainTests.train">
+        <member name="M:LibraryTests.Tests.Compuerta_and_Test">
             <summary>
-            El tren para probar.
+            Testea la clase CompuertaAND
             </summary>
         </member>
-        <member name="M:Tests.TrainTests.Setup">
+        <member name="M:LibraryTests.Tests.Compuerta_Or_Test">
             <summary>
-            Crea un tren para probar.
+            Testea la clase CompuertaO
             </summary>
         </member>
-        <member name="M:Tests.TrainTests.StartTrainTest">
+        <member name="M:LibraryTests.Tests.Compuerta_Not_Test">
             <summary>
-            Prueba que el tren arranque.
+            Testea la clase CompuertaNOT
             </summary>
         </member>
-        <member name="M:Tests.TrainTests.StopTrainTest">
+        <member name="M:LibraryTests.Tests.CircuitoTest">
             <summary>
-            Prueba que el tren se detenga.
+            Testea un circuito de AND, OR, NOT
             </summary>
         </member>
     </members>

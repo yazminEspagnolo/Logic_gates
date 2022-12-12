@@ -4,5 +4,116 @@
         <name>Library</name>
     </assembly>
     <members>
+        <member name="T:Library.Compuerta">
+            <summary>
+            Clase abstracta que representa una compuerta.
+            </summary>
+        </member>
+        <member name="M:Library.Compuerta.#ctor(System.String)">
+            <summary>
+            Este es el constructor de la clase Compuerta.
+            </summary>
+        </member>
+        <member name="P:Library.Compuerta.Entradas">
+            <summary>
+            Creo un diccionario de entradas.
+            </summary>
+        </member>
+        <member name="P:Library.Compuerta.Nombre">
+            <summary>
+            Creo un atributo nombre.
+            </summary>
+        </member>
+        <member name="M:Library.Compuerta.AgregarEntrada(System.String,Library.IInput)">
+            <summary>
+            Metodo que agrega una entrada al diccionario.
+            </summary>
+            <param name="nombre"></param>
+            <param name="valor"></param>
+        </member>
+        <member name="M:Library.Compuerta.Resultado">
+            <summary>
+            Metodo que devuelve el resultado de la compuerta.
+            </summary>
+        </member>
+        <member name="T:Library.Compuerta_and">
+            <summary>
+            Clase que representa una compuerta and.
+            </summary>
+        </member>
+        <member name="M:Library.Compuerta_and.#ctor(System.String)">
+            <summary>
+            Este es el constructor de la clase Compuerta_and.
+            </summary>
+            <param name="nombre"></param>
+        </member>
+        <member name="M:Library.Compuerta_and.Resultado">
+            <summary>
+            Este metodo devuelve el resultado de la compuerta and.
+            </summary>
+        </member>
+        <member name="T:Library.Compuerta_not">
+            <summary>
+            Clase que representa una compuerta not.
+            </summary>
+        </member>
+        <member name="M:Library.Compuerta_not.#ctor(System.String)">
+            <summary>
+            Este es el constructor de la clase Compuerta_not.
+            </summary>
+            <param name="nombre"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Library.Compuerta_not.Resultado">
+            <summary>
+            Metodo que devuelve el resultado de la compuerta not.
+            </summary>
+        </member>
+        <member name="T:Library.Compuerta_or">
+            <summary>
+            Clase que representa una compuerta or.
+            </summary>
+        </member>
+        <member name="M:Library.Compuerta_or.#ctor(System.String)">
+            <summary>
+            Este es el constructor de la clase Compuerta_or.
+            </summary>
+        </member>
+        <member name="M:Library.Compuerta_or.Resultado">
+            <summary>
+            Metodo que devuelve el resultado de la compuerta or.
+            </summary>
+        </member>
+        <member name="T:Library.IInput">
+            <summary>
+            Interfaz que representa un input.
+            </summary>
+        </member>
+        <member name="M:Library.IInput.Resultado">
+            <summary>
+            Metodo que devuelve el resultado de la compuerta.
+            </summary>
+        </member>
+        <member name="T:Library.Logic_input">
+            <summary>
+            Clase que representa el input de la compuerta.
+            </summary>
+        </member>
+        <member name="P:Library.Logic_input.Valor">
+            <summary>
+            Valor de la compuerta.
+            </summary>
+        </member>
+        <member name="M:Library.Logic_input.#ctor(System.Int32)">
+            <summary>
+            Este es el constructor de la clase Logic_input.
+            </summary>
+            <param name="valor"></param>
+        </member>
+        <member name="M:Library.Logic_input.Resultado">
+            <summary>
+            Retorna el valor de la compuerta.
+            </summary>
+        </member>
     </members>
 </doc>

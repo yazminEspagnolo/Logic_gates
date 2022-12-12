@@ -18,6 +18,7 @@ public abstract class Compuerta
     /// <summary>
     /// Creo un diccionario de entradas.
     /// </summary>
+    
     public Dictionary<string, IInput> Entradas { get; set; }
     /// <summary>
     /// Creo un atributo nombre.
