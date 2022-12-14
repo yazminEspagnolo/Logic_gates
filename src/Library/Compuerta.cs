@@ -11,8 +11,17 @@ public abstract class Compuerta
     /// </summary>
     public Compuerta(string nombre)
     {
+        // Excepción para que el nombre no sea nulo o vacío.
+        if (string.IsNullOrEmpty(nombre))
+        {
+            throw new System.ArgumentNullException("El nombre no puede ser nulo o vacio.");
+        }
+        else
+        {
+            this.Nombre = nombre;
+        }
         this.Entradas = new Dictionary<string, IInput>(); // Inicializa el diccionario (Un diccionario es una estructura de datos que permite almacenar pares de valores).   
-        this.Nombre = nombre;
+        
     }
 
     /// <summary>

@@ -17,11 +17,24 @@ public class Compuerta_and : Compuerta, IInput
     /// </summary>
     public override int Resultado()
     {
-        int valor = 1;
+        if (Entradas.Count != 2)
+        {
+            throw new CantidadDeEntradasExcepcion("La compuerta and debe tener 2 entradas");
+        }
+            foreach (IInput entrada in Entradas.Values)
+            {
+                if (entrada.Resultado() == 0)
+                {
+                    return 0;
+                }
+            }
+            return 1;
+
+        /* int valor = 1;
         foreach (IInput entrada in Entradas.Values)
         {
             valor = valor * entrada.Resultado();
         }
-        return valor;
+        return valor; */
     }
 }
